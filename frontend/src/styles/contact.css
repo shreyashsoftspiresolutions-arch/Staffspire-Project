@@ -1,0 +1,482 @@
+/* ============================================================
+   StaffSpire Contact Page — Dedicated Styles
+   ============================================================ */
+
+/* ── Main Layout ───────────────────────────────────────────── */
+.ct-main {
+    padding-top: 108px; /* navbar offset */
+    padding-bottom: 80px;
+    max-width: var(--ss-max-w);
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+}
+
+/* ── Ambient Glow Elements ─────────────────────────────────── */
+.ct-ambient-glow-1 {
+    position: absolute;
+    top: -160px;
+    right: -160px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 80, 203, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.ct-ambient-glow-2 {
+    position: absolute;
+    bottom: -120px;
+    left: -120px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(229, 238, 255, 0.4) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ── Header ────────────────────────────────────────────────── */
+.ct-header {
+    margin-bottom: 56px;
+}
+
+.ct-title {
+    font-size: clamp(2.4rem, 4.5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--ss-on-surface);
+    margin: 0;
+}
+
+.ct-subtitle {
+    font-size: 1.05rem;
+    color: var(--ss-on-surface-var);
+    line-height: 1.7;
+    max-width: 600px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+/* ── Grid System ───────────────────────────────────────────── */
+.ct-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+/* ── Glass Panel / Cards ────────────────────────────────────── */
+.ct-form-panel {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.6);
+    border-radius: 20px;
+    padding: 48px;
+    box-shadow: 0 40px 80px -20px rgba(11, 28, 48, 0.04);
+}
+
+.ct-info-card {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.6);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 40px 80px -20px rgba(11, 28, 48, 0.04);
+    position: relative;
+    overflow: hidden;
+}
+
+/* ── Contact Form ──────────────────────────────────────────── */
+.ct-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.ct-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.ct-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ct-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--ss-on-surface-var);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-left: 2px;
+}
+
+.ct-input,
+.ct-select,
+.ct-textarea {
+    width: 100%;
+    background: var(--ss-surface-low);
+    border: 1px solid rgba(194, 198, 216, 0.4);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 0.9rem;
+    font-family: var(--ss-font);
+    color: var(--ss-on-surface);
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.ct-input:focus,
+.ct-select:focus,
+.ct-textarea:focus {
+    border-color: var(--ss-primary);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(0, 80, 203, 0.1);
+}
+
+.ct-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23424656' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+.ct-textarea {
+    resize: none;
+}
+
+.ct-form-actions {
+    margin-top: 8px;
+}
+
+.ct-submit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 36px;
+    background: var(--ss-primary-light);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-family: var(--ss-font);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0, 102, 255, 0.2);
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.ct-submit-btn:hover {
+    background: var(--ss-primary);
+    box-shadow: 0 12px 28px rgba(0, 80, 203, 0.25);
+}
+
+.ct-submit-btn:active {
+    transform: scale(0.97);
+}
+
+.ct-send-icon {
+    font-size: 18px;
+    transition: transform 0.25s ease;
+}
+
+.ct-submit-btn:hover .ct-send-icon {
+    transform: translate(3px, -2px);
+}
+
+/* ── Info Column ───────────────────────────────────────────── */
+.ct-info-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Headquarters Decoration */
+.ct-card-decor {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    opacity: 0.08;
+    pointer-events: none;
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ct-office-card:hover .ct-card-decor {
+    transform: scale(1.1) translate(-4px, 4px);
+}
+
+.ct-decor-icon {
+    font-size: 120px;
+    color: var(--ss-primary);
+}
+
+.ct-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--ss-on-surface);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 24px;
+}
+
+.ct-card-title-icon {
+    color: var(--ss-primary);
+    font-size: 24px;
+}
+
+.ct-office-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ct-detail-row {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.ct-detail-icon {
+    color: var(--ss-primary);
+    font-size: 20px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.ct-detail-text {
+    font-size: 0.9rem;
+    color: var(--ss-on-surface-var);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.ct-detail-link {
+    font-size: 0.9rem;
+    color: var(--ss-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.ct-detail-link:hover {
+    text-decoration: underline;
+}
+
+.ct-social-links {
+    display: flex;
+    gap: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(194, 198, 216, 0.2);
+}
+
+.ct-social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--ss-surface-low);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ss-primary);
+    transition: all 0.25s ease;
+}
+
+.ct-social-btn:hover {
+    background: var(--ss-primary);
+    color: #fff;
+}
+
+.ct-social-svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+/* Map Card */
+.ct-map-card {
+    width: 475px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(194, 198, 216, 0.3);
+}
+
+.ct-map-img {
+    width: 450px;
+    height: 190px;
+    align-items: center;
+    display: block;
+    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ct-map-card:hover .ct-map-img {
+    transform: scale(1.06);
+}
+
+.ct-map-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(11, 28, 48, 0.45) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.ct-map-badge {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 9999px;
+    padding: 6px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 16px rgba(11, 28, 48, 0.08);
+}
+
+.ct-badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--ss-primary);
+    animation: ct-pulse-dot 2s infinite ease-in-out;
+}
+
+@keyframes ct-pulse-dot {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.5; }
+}
+
+.ct-badge-text {
+    font-size: 0.60rem;
+    font-weight: 700;
+    color: var(--ss-on-surface);
+}
+
+/* Support Hours Rows */
+.ct-hours-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ct-hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(194, 198, 216, 0.15);
+    padding-bottom: 10px;
+}
+
+.ct-hours-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.ct-hours-day {
+    font-size: 0.9rem;
+    color: var(--ss-on-surface-var);
+}
+
+.ct-hours-time {
+    font-size: 0.9rem;
+    color: var(--ss-on-surface);
+    font-weight: 600;
+}
+
+/* FAQ Accordion Section */
+.ct-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ct-faq-item {
+    border-bottom: 1px solid rgba(194, 198, 216, 0.15);
+    padding-bottom: 12px;
+}
+
+.ct-faq-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.ct-faq-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-none: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ss-on-surface);
+    user-select: none;
+    outline: none;
+    transition: color 0.2s;
+}
+
+.ct-faq-trigger::-webkit-details-marker {
+    display: none;
+}
+
+.ct-faq-trigger:hover {
+    color: var(--ss-primary);
+}
+
+.ct-faq-arrow {
+    font-size: 20px;
+    color: var(--ss-on-surface-var);
+    transition: transform 0.3s ease;
+}
+
+.ct-faq-item[open] .ct-faq-arrow {
+    transform: rotate(180deg);
+    color: var(--ss-primary);
+}
+
+.ct-faq-answer {
+    font-size: 0.88rem;
+    color: var(--ss-on-surface-var);
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: 2px;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+    .ct-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .ct-main {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 92px;
+    }
+
+    .ct-form-panel {
+        padding: 32px 24px;
+    }
+
+    .ct-form-row {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}

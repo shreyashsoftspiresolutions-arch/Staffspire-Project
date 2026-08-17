@@ -1,0 +1,366 @@
+/* Softspire Theme */
+.theme-softspire {
+    --primary: #D81B60;
+    --primary-hover: #AD1457;
+    --sidebar-bg: #0B132B;
+    --bg-color: #f8fafc;
+    --card-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.theme-softspire .sidebar {
+    background: var(--sidebar-bg);
+    color: #a0aec0;
+    border-right: none;
+}
+
+.theme-softspire .sidebar-menu li {
+    color: #a0aec0;
+}
+
+.theme-softspire .sidebar-menu li:hover {
+    background: rgba(216, 27, 96, 0.1);
+    color: white;
+    border-left-color: var(--primary);
+}
+
+.theme-softspire .sidebar-menu li:hover svg {
+    color: var(--primary);
+}
+
+.theme-softspire .active-menu {
+    background: rgba(216, 27, 96, 0.15) !important;
+    color: white !important;
+    border-left-color: var(--primary) !important;
+}
+
+.theme-softspire .active-menu svg {
+    color: var(--primary) !important;
+}
+
+/* Header Styling */
+.theme-softspire .header-premium {
+    background: linear-gradient(135deg, #fffaf0 0%, #fef3c7 100%) !important;
+    border-bottom: 1px solid rgba(216, 27, 96, 0.25) !important;
+    box-shadow: 0 4px 20px rgba(216, 27, 96, 0.12) !important;
+}
+
+.theme-softspire .header-title-premium {
+    background: none !important;
+    -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
+.theme-softspire .header-divider-premium {
+    background: rgba(216, 27, 96, 0.3) !important;
+}
+
+.theme-softspire .action-btn-premium {
+    background: white !important;
+    border: 1px solid rgba(216, 27, 96, 0.3) !important;
+    color: var(--primary) !important;
+}
+
+.theme-softspire .action-btn-premium:hover {
+    background: var(--primary) !important;
+    color: white !important;
+}
+
+.theme-softspire .profile-name-premium {
+    color: rgb(0, 0, 0) !important;
+}
+
+.theme-softspire .profile-role-premium,
+.theme-softspire .profile-chevron-premium {
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.theme-softspire .profile-widget-premium:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.theme-softspire .badge-count-premium {
+    border-color: #D81B60 !important;
+}
+
+.theme-softspire .badge-count {
+    background: var(--primary);
+}
+
+.theme-softspire .profile-widget:hover {
+    border-color: var(--primary);
+    background: rgba(216, 27, 96, 0.05);
+}
+
+/* Primary Buttons Overrides */
+.theme-softspire .btn-add-employee,
+.theme-softspire .add-btn,
+.theme-softspire .primary-btn,
+.theme-softspire .save-btn,
+.theme-softspire .btn-generate-report:hover,
+.theme-softspire .department-form button {
+    background-color: var(--primary) !important;
+    color: white !important;
+    border-color: var(--primary) !important;
+}
+
+.theme-softspire .btn-add-employee:hover,
+.theme-softspire .add-btn:hover,
+.theme-softspire .primary-btn:hover,
+.theme-softspire .save-btn:hover,
+.theme-softspire .department-form button:hover {
+    background-color: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+}
+
+/* Table styling for Softspire */
+.theme-softspire .employee-table th,
+.theme-softspire .department-table th,
+.theme-softspire .pending-table th {
+    background-color: rgba(216, 27, 96, 0.1) !important;
+    color: var(--primary) !important;
+    border-bottom: 2px solid var(--primary);
+}
+
+/* Form Inputs Focus */
+.theme-softspire .form-group input:focus,
+.theme-softspire .password-field input:focus,
+.theme-softspire .detail-group input:focus,
+.theme-softspire .search-bar-input:focus,
+.theme-softspire .form-group select:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 3px rgba(216, 27, 96, 0.15) !important;
+}
+
+/* Badges & Icons */
+.theme-softspire .status-badge.pending {
+    background-color: #fce4ec;
+    color: #c2185b;
+}
+.theme-softspire .activity-timeline-dot.blue { background-color: var(--primary); }
+.theme-softspire .kpi-icon-wrapper.blue { background-color: rgba(216, 27, 96, 0.1); color: var(--primary); }
+
+/* Colorful KPI Cards */
+.theme-softspire .kpi-card:nth-child(1) { background: linear-gradient(135deg, #D81B60, #D81B60); color: white; border: none; }
+.theme-softspire .kpi-card:nth-child(2) { background: linear-gradient(135deg, #D81B60, #D81B60); color: white; border: none; }
+.theme-softspire .kpi-card:nth-child(3) { background: linear-gradient(135deg, #D81B60, #D81B60); color: white; border: none; }
+.theme-softspire .kpi-card:nth-child(4) { background: linear-gradient(135deg, #D81B60, #D81B60); color: white; border: none; }
+.theme-softspire .kpi-card:nth-child(5) { background: linear-gradient(135deg, #D81B60, #D81B60); color: white; border: none; }
+.theme-softspire .kpi-card:nth-child(6) { background: linear-gradient(135deg, #D81B60, #D81B60); color: white; border: none; }
+.theme-softspire .kpi-card:nth-child(7) { background: linear-gradient(135deg, #D81B60, #D81B60); color: white; border: none; }
+.theme-softspire .kpi-card:nth-child(8) { background: linear-gradient(135deg, #D81B60, #D81B60); color: white; border: none; }
+
+.theme-softspire .kpi-card .kpi-card-label {
+    color: white !important;
+}
+.theme-softspire .kpi-card .kpi-card-value,
+.theme-softspire .kpi-card .trend-badge {
+    color: white !important;
+}
+
+.theme-softspire .kpi-card .kpi-icon-wrapper {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+
+/* Add Softspire Banner style */
+.softspire-banner {
+    display: none;
+}
+
+.theme-softspire .softspire-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(90deg, #D81B60, #F06292);
+    border-radius: 16px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 15px rgba(216, 27, 96, 0.3);
+}
+
+.theme-softspire .softspire-banner h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.theme-softspire .softspire-banner p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* Transactional Page (Add Employee, etc) */
+.theme-softspire .header-title-wrapper h1,
+.theme-softspire .text-primary {
+    color: var(--primary) !important;
+}
+
+.theme-softspire .stepper-line-active {
+    background-color: var(--primary);
+}
+
+.theme-softspire .step-node.active .step-circle {
+    background-color: var(--primary);
+}
+
+.theme-softspire .step-node.active .step-label {
+    color: var(--primary);
+}
+
+.theme-softspire .form-textbox:focus,
+.theme-softspire .form-select-custom:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(216, 27, 96, 0.15);
+}
+
+.theme-softspire .role-interactive-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(216, 27, 96, 0.05);
+}
+
+.theme-softspire .role-interactive-card.selected {
+    border-color: var(--primary);
+    background-color: rgba(216, 27, 96, 0.04);
+}
+
+.theme-softspire .role-interactive-card.selected .radio-indicator {
+    border-color: var(--primary);
+}
+
+.theme-softspire .role-interactive-card.selected .radio-indicator-dot {
+    background-color: var(--primary);
+}
+
+.theme-softspire .btn-form-submit {
+    background-color: var(--primary);
+    box-shadow: 0 2px 8px rgba(216, 27, 96, 0.2);
+}
+
+.theme-softspire .btn-form-submit:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Reports Page Overrides */
+.theme-softspire .reports-tab-btn.active {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+.theme-softspire .btn-export-action,
+.theme-softspire .btn-filter-reset {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.theme-softspire .btn-export-action:hover,
+.theme-softspire .btn-filter-reset:hover {
+    background-color: var(--primary-hover) !important;
+}
+
+/* Tasks Page Overrides */
+.theme-softspire .btn-new-task {
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover)) !important;
+    box-shadow: 0 4px 14px rgba(216, 27, 96, 0.35) !important;
+}
+
+.theme-softspire .btn-task-search {
+    background-color: var(--primary) !important;
+}
+
+.theme-softspire .task-id-text {
+    color: var(--primary) !important;
+}
+
+.theme-softspire .btn-view {
+    color: var(--primary) !important;
+    border-color: rgba(216, 27, 96, 0.4) !important;
+    background-color: rgba(216, 27, 96, 0.1) !important;
+}
+
+.theme-softspire .btn-view:hover {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+/* Settings Page Overrides */
+.theme-softspire .settings-tab-btn.active {
+    background-color: rgba(216, 27, 96, 0.15) !important;
+    color: var(--primary) !important;
+}
+
+.theme-softspire .settings-tab-btn:not(.active):hover {
+    background-color: rgba(216, 27, 96, 0.08) !important;
+}
+
+.theme-softspire .btn-settings-save {
+    background-color: var(--primary) !important;
+    box-shadow: 0 4px 6px -1px rgba(216, 27, 96, 0.2) !important;
+}
+
+.theme-softspire .btn-settings-save:hover {
+    background-color: var(--primary-hover) !important;
+}
+
+/* Detail Pages Overrides (TaskDetail, ProjectDetail, etc.) */
+.theme-softspire .back-link-btn {
+    color: var(--primary) !important;
+}
+.theme-softspire .task-id-badge {
+    color: var(--primary) !important;
+    background: rgba(216, 27, 96, 0.15) !important;
+    border: 1px solid rgba(216, 27, 96, 0.3) !important;
+}
+.theme-softspire .btn-edit-task,
+.theme-softspire .btn-save-task {
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover)) !important;
+    box-shadow: 0 4px 12px rgba(216, 27, 96, 0.3) !important;
+}
+.theme-softspire .btn-edit-task:hover,
+.theme-softspire .btn-save-task:hover {
+    background: var(--primary-hover) !important;
+    transform: translateY(-1px);
+}
+.theme-softspire .task-detail-icon {
+    color: var(--primary) !important;
+}
+.theme-softspire .task-desc-box {
+    border-left-color: var(--primary) !important;
+    background: #fffaf0 !important;
+}
+
+/* Manager Performance Dashboard Section (Softspire Theme) */
+.theme-softspire .perf-dashboard-section {
+    background: linear-gradient(135deg, #fffaf0 0%, #fffef9 100%) !important;
+    border-color: rgba(216, 27, 96, 0.3) !important;
+    box-shadow: 0 4px 20px rgba(216, 27, 96, 0.08) !important;
+}
+.theme-softspire .perf-header-title {
+    color: #1e293b !important;
+}
+.theme-softspire .perf-stat-card.stat-1 {
+    background: rgba(216, 27, 96, 0.1) !important;
+    border-color: rgba(216, 27, 96, 0.3) !important;
+    color: #9a3412 !important;
+}
+.theme-softspire .perf-stat-card.stat-1 .perf-stat-val {
+    color: var(--primary) !important;
+}
+.theme-softspire .perf-stat-card.stat-2 {
+    background: #f0fdf4 !important;
+    border-color: #bbf7d0 !important;
+}
+.theme-softspire .perf-stat-card.stat-3 {
+    background: #fff1f2 !important;
+    border-color: #fecdd3 !important;
+}
+.theme-softspire .perf-deliverable-card:hover {
+    border-color: var(--primary) !important;
+    box-shadow: 0 4px 12px rgba(216, 27, 96, 0.12) !important;
+}
+
+/* Employee Dashboard Softspire overrides */
+.theme-softspire .emp-proj-card-item:hover {
+    border-color: var(--primary) !important;
+    box-shadow: 0 6px 16px rgba(216, 27, 96, 0.12) !important;
+}

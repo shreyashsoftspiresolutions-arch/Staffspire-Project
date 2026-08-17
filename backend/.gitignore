@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+mock_emails.log
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/

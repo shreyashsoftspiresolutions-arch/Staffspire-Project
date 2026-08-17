@@ -1,0 +1,461 @@
+/* managerDashboard.css */
+
+.manager-dashboard-container {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAF8FF;
+    color: #191B23;
+    padding: 0;
+    min-height: calc(100vh - 80px);
+}
+
+.manager-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.manager-page-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #191B23;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.manager-page-title p {
+    font-size: 14px;
+    color: #585F6C;
+    margin-top: 4px;
+}
+
+.manager-header-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-review-leaves {
+    background-color: #FFFFFF;
+    border: 1px solid #C3C6D7;
+    color: #004ac6;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+.btn-review-leaves:hover {
+    background-color: #F8FAFC;
+}
+
+.btn-assign-task {
+    background-color: #004ac6;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+.btn-assign-task:hover {
+    background-color: #003ea8;
+}
+
+.btn-team-report {
+    background-color: #e7e7f3;
+    border: none;
+    color: #191B23;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-team-report:hover {
+    background-color: #d9d9e5;
+}
+
+/* Department Info Card */
+.dept-summary-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    margin-bottom: 24px;
+}
+
+.dept-summary-bg-gradient {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 256px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 74, 198, 0.04), transparent);
+    pointer-events: none;
+}
+
+.dept-summary-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.dept-icon-box {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: rgba(0, 74, 198, 0.06);
+    color: #004ac6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.dept-details h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #191B23;
+    margin: 0;
+}
+
+.dept-details p {
+    font-size: 14px;
+    color: #585F6C;
+    margin-top: 4px;
+}
+
+.dept-summary-right {
+    display: flex;
+    gap: 48px;
+    position: relative;
+    z-index: 1;
+}
+
+.dept-stat-item p.label {
+    font-size: 12px;
+    color: #585F6C;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.dept-stat-item p.value {
+    font-size: 32px;
+    font-weight: 600;
+    color: #191B23;
+    margin: 0;
+    text-align: left;
+}
+
+.dept-stat-attendance-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dept-stat-attendance-badge {
+    background-color: rgba(0, 74, 198, 0.06);
+    color: #004ac6;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+/* KPI 5-column grid */
+.manager-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+    .manager-kpi-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .manager-kpi-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.manager-kpi-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    transition: box-shadow 0.2s ease;
+}
+
+.manager-kpi-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.manager-kpi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #585F6C;
+}
+
+.manager-kpi-header.blue {
+    color: #004ac6;
+}
+
+.manager-kpi-header.yellow {
+    color: #d97706;
+}
+
+.manager-kpi-header.red {
+    color: #ba1a1a;
+}
+
+.manager-kpi-header span.time-tag {
+    font-size: 12px;
+    color: #737686;
+}
+
+.manager-kpi-body {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.manager-kpi-value {
+    font-size: 24px;
+    font-weight: 600;
+    color: #191B23;
+    margin: 0;
+}
+
+.manager-kpi-label {
+    font-size: 12px;
+    color: #585F6C;
+    margin-bottom: 4px;
+}
+
+/* Bento Grid */
+.manager-bento-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .manager-bento-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.manager-bento-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.manager-bento-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.manager-bento-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #191B23;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+/* Progress bar styles */
+.progress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.progress-item-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #191B23;
+    margin-bottom: 8px;
+}
+
+.progress-bar-bg {
+    width: 100%;
+    background-color: #e1e2ed;
+    border-radius: 9999px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    border-radius: 9999px;
+    transition: width 0.4s ease;
+}
+
+.progress-bar-fill.blue {
+    background-color: #004ac6;
+}
+
+.progress-bar-fill.teal {
+    background-color: #0074a6;
+}
+
+.progress-bar-fill.tint {
+    background-color: #2563eb;
+}
+
+/* Attendance Trend Chart */
+.attendance-trend-chart-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 8px;
+    height: 200px;
+    border-top: 1px solid rgba(225, 226, 237, 0.4);
+    padding-top: 16px;
+    margin-top: 16px;
+}
+
+.attendance-trend-chart-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.attendance-trend-chart-bar {
+    width: 24px;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.attendance-trend-chart-bar:hover {
+    filter: brightness(0.9);
+}
+
+.attendance-trend-chart-label {
+    font-size: 12px;
+    color: #737686;
+    font-weight: 500;
+}
+
+/* Department Projects & Performance Section (Light Theme Default) */
+.perf-dashboard-section {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04) !important;
+    color: #0f172a !important;
+    padding: 24px !important;
+}
+
+.perf-header-title {
+    color: #0f172a !important;
+}
+
+.perf-header-sub {
+    color: #64748b !important;
+}
+
+.perf-manage-btn {
+    background: var(--primary, #2563eb) !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2) !important;
+    transition: all 0.2s ease !important;
+}
+
+.perf-manage-btn:hover {
+    background: #1d4ed8 !important;
+    transform: translateY(-1px);
+}
+
+.perf-stat-card.stat-1 {
+    background: #eff6ff !important;
+    border: 1px solid #bfdbfe !important;
+    color: #1e3a8a !important;
+}
+.perf-stat-card.stat-1 .perf-stat-val {
+    color: #2563eb !important;
+}
+
+.perf-stat-card.stat-2 {
+    background: #f0fdf4 !important;
+    border: 1px solid #bbf7d0 !important;
+    color: #14532d !important;
+}
+.perf-stat-card.stat-2 .perf-stat-val {
+    color: #16a34a !important;
+}
+
+.perf-stat-card.stat-3 {
+    background: #fff1f2 !important;
+    border: 1px solid #fecdd3 !important;
+    color: #881337 !important;
+}
+.perf-stat-card.stat-3 .perf-stat-val {
+    color: #e11d48 !important;
+}
+
+.perf-deliverable-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.02) !important;
+}
+
+.perf-deliverable-card:hover {
+    border-color: var(--primary, #2563eb) !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08) !important;
+    transform: translateY(-2px);
+}
+

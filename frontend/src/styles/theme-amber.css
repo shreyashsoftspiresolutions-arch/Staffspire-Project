@@ -1,0 +1,366 @@
+/* Amber Theme */
+.theme-amber {
+    --primary: #FF8C00;
+    --primary-hover: #e67e00;
+    --sidebar-bg: #131722;
+    --bg-color: #f8fafc;
+    --card-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.theme-amber .sidebar {
+    background: var(--sidebar-bg);
+    color: #a0aec0;
+    border-right: none;
+}
+
+.theme-amber .sidebar-menu li {
+    color: #a0aec0;
+}
+
+.theme-amber .sidebar-menu li:hover {
+    background: rgba(255, 140, 0, 0.1);
+    color: white;
+    border-left-color: var(--primary);
+}
+
+.theme-amber .sidebar-menu li:hover svg {
+    color: var(--primary);
+}
+
+.theme-amber .active-menu {
+    background: rgba(255, 140, 0, 0.15) !important;
+    color: white !important;
+    border-left-color: var(--primary) !important;
+}
+
+.theme-amber .active-menu svg {
+    color: var(--primary) !important;
+}
+
+/* Header Styling */
+.theme-amber .header-premium {
+    background: linear-gradient(135deg, #fffaf0 0%, #fef3c7 100%) !important;
+    border-bottom: 1px solid rgba(255, 140, 0, 0.25) !important;
+    box-shadow: 0 4px 20px rgba(255, 140, 0, 0.12) !important;
+}
+
+.theme-amber .header-title-premium {
+    background: none !important;
+    -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
+.theme-amber .header-divider-premium {
+    background: rgba(255, 140, 0, 0.3) !important;
+}
+
+.theme-amber .action-btn-premium {
+    background: white !important;
+    border: 1px solid rgba(255, 140, 0, 0.3) !important;
+    color: var(--primary) !important;
+}
+
+.theme-amber .action-btn-premium:hover {
+    background: var(--primary) !important;
+    color: white !important;
+}
+
+.theme-amber .profile-name-premium {
+    color: rgb(0, 0, 0) !important;
+}
+
+.theme-amber .profile-role-premium,
+.theme-amber .profile-chevron-premium {
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.theme-amber .profile-widget-premium:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.theme-amber .badge-count-premium {
+    border-color: #ff8c00 !important;
+}
+
+.theme-amber .badge-count {
+    background: var(--primary);
+}
+
+.theme-amber .profile-widget:hover {
+    border-color: var(--primary);
+    background: rgba(255, 140, 0, 0.05);
+}
+
+/* Primary Buttons Overrides */
+.theme-amber .btn-add-employee,
+.theme-amber .add-btn,
+.theme-amber .primary-btn,
+.theme-amber .save-btn,
+.theme-amber .btn-generate-report:hover,
+.theme-amber .department-form button {
+    background-color: var(--primary) !important;
+    color: white !important;
+    border-color: var(--primary) !important;
+}
+
+.theme-amber .btn-add-employee:hover,
+.theme-amber .add-btn:hover,
+.theme-amber .primary-btn:hover,
+.theme-amber .save-btn:hover,
+.theme-amber .department-form button:hover {
+    background-color: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+}
+
+/* Table styling for Amber */
+.theme-amber .employee-table th,
+.theme-amber .department-table th,
+.theme-amber .pending-table th {
+    background-color: rgba(255, 140, 0, 0.1) !important;
+    color: var(--primary) !important;
+    border-bottom: 2px solid var(--primary);
+}
+
+/* Form Inputs Focus */
+.theme-amber .form-group input:focus,
+.theme-amber .password-field input:focus,
+.theme-amber .detail-group input:focus,
+.theme-amber .search-bar-input:focus,
+.theme-amber .form-group select:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.15) !important;
+}
+
+/* Badges & Icons */
+.theme-amber .status-badge.pending {
+    background-color: #fff7ed;
+    color: #ea580c;
+}
+.theme-amber .activity-timeline-dot.blue { background-color: var(--primary); }
+.theme-amber .kpi-icon-wrapper.blue { background-color: rgba(255, 140, 0, 0.1); color: var(--primary); }
+
+/* Colorful KPI Cards */
+.theme-amber .kpi-card:nth-child(1) { background: linear-gradient(135deg, #3b82f6, #3b82f6); color: white; border: none; }
+.theme-amber .kpi-card:nth-child(2) { background: linear-gradient(135deg, #3b82f6, #3b82f6); color: white; border: none; }
+.theme-amber .kpi-card:nth-child(3) { background: linear-gradient(135deg, #3b82f6, #3b82f6); color: white; border: none; }
+.theme-amber .kpi-card:nth-child(4) { background: linear-gradient(135deg, #3b82f6, #3b82f6); color: white; border: none; }
+.theme-amber .kpi-card:nth-child(5) { background: linear-gradient(135deg, #3b82f6, #3b82f6); color: white; border: none; }
+.theme-amber .kpi-card:nth-child(6) { background: linear-gradient(135deg, #3b82f6, #3b82f6); color: white; border: none; }
+.theme-amber .kpi-card:nth-child(7) { background: linear-gradient(135deg, #3b82f6, #3b82f6); color: white; border: none; }
+.theme-amber .kpi-card:nth-child(8) { background: linear-gradient(135deg, #3b82f6, #3b82f6); color: white; border: none; }
+
+.theme-amber .kpi-card .kpi-card-label {
+    color: white !important;
+}
+.theme-amber .kpi-card .kpi-card-value,
+.theme-amber .kpi-card .trend-badge {
+    color: white !important;
+}
+
+.theme-amber .kpi-card .kpi-icon-wrapper {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+
+/* Add Amber Banner style */
+.amber-banner {
+    display: none;
+}
+
+.theme-amber .amber-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(90deg, #ff8c00, #ffb347);
+    border-radius: 16px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+}
+
+.theme-amber .amber-banner h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.theme-amber .amber-banner p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* Transactional Page (Add Employee, etc) */
+.theme-amber .header-title-wrapper h1,
+.theme-amber .text-primary {
+    color: var(--primary) !important;
+}
+
+.theme-amber .stepper-line-active {
+    background-color: var(--primary);
+}
+
+.theme-amber .step-node.active .step-circle {
+    background-color: var(--primary);
+}
+
+.theme-amber .step-node.active .step-label {
+    color: var(--primary);
+}
+
+.theme-amber .form-textbox:focus,
+.theme-amber .form-select-custom:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.15);
+}
+
+.theme-amber .role-interactive-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(255, 140, 0, 0.05);
+}
+
+.theme-amber .role-interactive-card.selected {
+    border-color: var(--primary);
+    background-color: rgba(255, 140, 0, 0.04);
+}
+
+.theme-amber .role-interactive-card.selected .radio-indicator {
+    border-color: var(--primary);
+}
+
+.theme-amber .role-interactive-card.selected .radio-indicator-dot {
+    background-color: var(--primary);
+}
+
+.theme-amber .btn-form-submit {
+    background-color: var(--primary);
+    box-shadow: 0 2px 8px rgba(255, 140, 0, 0.2);
+}
+
+.theme-amber .btn-form-submit:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Reports Page Overrides */
+.theme-amber .reports-tab-btn.active {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+.theme-amber .btn-export-action,
+.theme-amber .btn-filter-reset {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.theme-amber .btn-export-action:hover,
+.theme-amber .btn-filter-reset:hover {
+    background-color: var(--primary-hover) !important;
+}
+
+/* Tasks Page Overrides */
+.theme-amber .btn-new-task {
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover)) !important;
+    box-shadow: 0 4px 14px rgba(255, 140, 0, 0.35) !important;
+}
+
+.theme-amber .btn-task-search {
+    background-color: var(--primary) !important;
+}
+
+.theme-amber .task-id-text {
+    color: var(--primary) !important;
+}
+
+.theme-amber .btn-view {
+    color: var(--primary) !important;
+    border-color: rgba(255, 140, 0, 0.4) !important;
+    background-color: rgba(255, 140, 0, 0.1) !important;
+}
+
+.theme-amber .btn-view:hover {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+/* Settings Page Overrides */
+.theme-amber .settings-tab-btn.active {
+    background-color: rgba(255, 140, 0, 0.15) !important;
+    color: var(--primary) !important;
+}
+
+.theme-amber .settings-tab-btn:not(.active):hover {
+    background-color: rgba(255, 140, 0, 0.08) !important;
+}
+
+.theme-amber .btn-settings-save {
+    background-color: var(--primary) !important;
+    box-shadow: 0 4px 6px -1px rgba(255, 140, 0, 0.2) !important;
+}
+
+.theme-amber .btn-settings-save:hover {
+    background-color: var(--primary-hover) !important;
+}
+
+/* Detail Pages Overrides (TaskDetail, ProjectDetail, etc.) */
+.theme-amber .back-link-btn {
+    color: var(--primary) !important;
+}
+.theme-amber .task-id-badge {
+    color: var(--primary) !important;
+    background: rgba(255, 140, 0, 0.15) !important;
+    border: 1px solid rgba(255, 140, 0, 0.3) !important;
+}
+.theme-amber .btn-edit-task,
+.theme-amber .btn-save-task {
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover)) !important;
+    box-shadow: 0 4px 12px rgba(255, 140, 0, 0.3) !important;
+}
+.theme-amber .btn-edit-task:hover,
+.theme-amber .btn-save-task:hover {
+    background: var(--primary-hover) !important;
+    transform: translateY(-1px);
+}
+.theme-amber .task-detail-icon {
+    color: var(--primary) !important;
+}
+.theme-amber .task-desc-box {
+    border-left-color: var(--primary) !important;
+    background: #fffaf0 !important;
+}
+
+/* Manager Performance Dashboard Section (Amber Theme) */
+.theme-amber .perf-dashboard-section {
+    background: linear-gradient(135deg, #fffaf0 0%, #fffef9 100%) !important;
+    border-color: rgba(255, 140, 0, 0.3) !important;
+    box-shadow: 0 4px 20px rgba(255, 140, 0, 0.08) !important;
+}
+.theme-amber .perf-header-title {
+    color: #1e293b !important;
+}
+.theme-amber .perf-stat-card.stat-1 {
+    background: rgba(255, 140, 0, 0.1) !important;
+    border-color: rgba(255, 140, 0, 0.3) !important;
+    color: #9a3412 !important;
+}
+.theme-amber .perf-stat-card.stat-1 .perf-stat-val {
+    color: var(--primary) !important;
+}
+.theme-amber .perf-stat-card.stat-2 {
+    background: #f0fdf4 !important;
+    border-color: #bbf7d0 !important;
+}
+.theme-amber .perf-stat-card.stat-3 {
+    background: #fff1f2 !important;
+    border-color: #fecdd3 !important;
+}
+.theme-amber .perf-deliverable-card:hover {
+    border-color: var(--primary) !important;
+    box-shadow: 0 4px 12px rgba(255, 140, 0, 0.12) !important;
+}
+
+/* Employee Dashboard Amber overrides */
+.theme-amber .emp-proj-card-item:hover {
+    border-color: var(--primary) !important;
+    box-shadow: 0 6px 16px rgba(255, 140, 0, 0.12) !important;
+}

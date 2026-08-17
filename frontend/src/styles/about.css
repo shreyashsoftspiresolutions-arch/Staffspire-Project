@@ -1,0 +1,544 @@
+/* ============================================================
+   StaffSpire About Page — Dedicated Styles
+   ============================================================ */
+
+.ab-container {
+    max-width: var(--ss-max-w);
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────── */
+.ab-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 32px;
+    background: var(--ss-primary);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-family: var(--ss-font);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 80, 203, 0.22);
+    transition: transform 0.2s, background 0.2s;
+}
+.ab-btn-primary:hover { transform: scale(1.04); background: var(--ss-primary-light); }
+
+.ab-btn-outline {
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 32px;
+    background: transparent;
+    color: var(--ss-primary);
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-family: var(--ss-font);
+    border: 1.5px solid var(--ss-outline);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.ab-btn-outline:hover { background: var(--ss-surface-container); }
+
+/* ── HERO ────────────────────────────────────────────────────── */
+.ab-hero {
+    background: #fff;
+    padding-top: 96px; /* navbar offset */
+    padding-bottom: 64px;
+}
+
+.ab-hero-inner {
+    max-width: var(--ss-max-w);
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.ab-hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.ab-hero-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    color: var(--ss-on-surface);
+}
+
+.ab-hero-desc {
+    font-size: 1rem;
+    color: var(--ss-on-surface-var);
+    line-height: 1.75;
+    max-width: 520px;
+}
+
+.ab-hero-btns {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* Hero visual */
+.ab-hero-img-wrap {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 80, 203, 0.12), 0 4px 16px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(194, 198, 216, 0.3);
+}
+
+.ab-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ── COMPANY STORY ───────────────────────────────────────────── */
+.ab-story {
+    background: var(--ss-surface);
+    padding: 80px 0;
+}
+
+.ab-story-inner {
+    max-width: var(--ss-max-w);
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.ab-story-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ab-story-tag {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ss-primary);
+    display: block;
+}
+
+.ab-story-title {
+    font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+    color: var(--ss-on-surface);
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+}
+
+.ab-story-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ab-story-para {
+    font-size: 1rem;
+    color: var(--ss-on-surface-var);
+    line-height: 1.75;
+}
+
+.ab-story-para strong {
+    color: var(--ss-primary);
+    font-weight: 700;
+}
+
+/* ── MISSION & VISION ────────────────────────────────────────── */
+.ab-mv-section {
+    background: var(--ss-surface-low);
+    padding: 80px 0;
+}
+
+.ab-mv-grid {
+    max-width: var(--ss-max-w);
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+/* Mission — light card */
+.ab-mission-card {
+    background: #fff;
+    border: 1px solid rgba(194, 198, 216, 0.3);
+    border-radius: 28px;
+    padding: 52px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: box-shadow 0.3s ease;
+}
+.ab-mission-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 80, 203, 0.1);
+}
+
+/* Vision — blue filled card */
+.ab-vision-card {
+    background: var(--ss-primary);
+    border-radius: 28px;
+    padding: 52px;
+    box-shadow: 0 12px 40px rgba(0, 80, 203, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.ab-vision-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0, 80, 203, 0.35);
+}
+
+.ab-mv-icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: rgba(0, 80, 203, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ab-mv-icon-box-inv {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.ab-mv-icon {
+    font-size: 30px;
+    color: var(--ss-primary);
+}
+
+.ab-vision-card .ab-mv-icon {
+    color: #fff;
+}
+
+.ab-mv-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--ss-on-surface);
+    letter-spacing: -0.015em;
+}
+
+.ab-mv-title-inv {
+    color: #fff;
+}
+
+.ab-mv-desc {
+    font-size: 1rem;
+    color: var(--ss-on-surface-var);
+    line-height: 1.7;
+}
+
+.ab-mv-desc-inv {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ── CORE SPECIALIZATIONS ────────────────────────────────────── */
+.ab-spec-section {
+    background: var(--ss-surface);
+    padding: 80px 0;
+}
+
+.ab-spec-header {
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.ab-spec-title {
+    font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+    font-weight: 700;
+    color: var(--ss-on-surface);
+    letter-spacing: -0.015em;
+    margin-bottom: 12px;
+}
+
+.ab-spec-sub {
+    font-size: 0.95rem;
+    color: var(--ss-on-surface-var);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.65;
+}
+
+.ab-spec-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.ab-spec-card {
+    background: #fff;
+    border: 1px solid rgba(194, 198, 216, 0.3);
+    border-radius: 20px;
+    padding: 32px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ab-spec-card:hover {
+    border-color: var(--ss-primary);
+    box-shadow: 0 8px 28px rgba(0, 80, 203, 0.08);
+}
+
+.ab-spec-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(0, 80, 203, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.ab-spec-icon {
+    font-size: 22px;
+    color: var(--ss-primary);
+}
+
+.ab-spec-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ss-on-surface);
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+}
+
+.ab-spec-desc {
+    font-size: 0.875rem;
+    color: var(--ss-on-surface-var);
+    line-height: 1.65;
+}
+
+/* ── BRIDGING THE SKILL GAP ──────────────────────────────────── */
+.ab-bridge-section {
+    background: var(--ss-surface-high);
+    padding: 80px 0;
+}
+
+.ab-bridge-inner {
+    max-width: var(--ss-max-w);
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+    align-items: center;
+}
+
+/* Tech stack art */
+.ab-bridge-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.ab-bridge-img-wrap {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 80, 203, 0.12), 0 4px 16px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(194, 198, 216, 0.3);
+}
+
+.ab-bridge-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Bridge text side */
+.ab-bridge-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ab-bridge-title {
+    font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+    color: var(--ss-on-surface);
+    letter-spacing: -0.015em;
+}
+
+.ab-bridge-desc {
+    font-size: 1rem;
+    color: var(--ss-on-surface-var);
+    line-height: 1.75;
+}
+
+.ab-bridge-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ab-bridge-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: var(--ss-on-surface-var);
+    line-height: 1.5;
+}
+
+.ab-bridge-check {
+    color: var(--ss-primary);
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ── CTA ─────────────────────────────────────────────────────── */
+.ab-cta-section {
+    background: var(--ss-primary);
+    padding: 96px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ab-cta-section::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.ab-cta-section::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: -60px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.ab-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ab-cta-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+
+.ab-cta-sub {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.65;
+    margin-bottom: 40px;
+}
+
+.ab-cta-btns {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.ab-cta-btn-white {
+    padding: 14px 36px;
+    background: #fff;
+    color: var(--ss-primary);
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-family: var(--ss-font);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s, transform 0.15s;
+}
+.ab-cta-btn-white:hover { background: #f8f9ff; transform: scale(1.03); }
+
+.ab-cta-btn-ghost {
+    padding: 14px 36px;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-family: var(--ss-font);
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.ab-cta-btn-ghost:hover { background: rgba(255, 255, 255, 0.1); }
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+    .ab-hero-inner,
+    .ab-story-inner,
+    .ab-bridge-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ab-mv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ab-spec-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ab-hero-visual {
+        order: -1;
+    }
+}
+
+@media (max-width: 640px) {
+    .ab-container,
+    .ab-hero-inner,
+    .ab-story-inner,
+    .ab-mv-grid,
+    .ab-bridge-inner {
+        padding: 0 20px;
+    }
+
+    .ab-spec-section .ab-container {
+        padding: 0 20px;
+    }
+
+    .ab-spec-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ab-cta-section {
+        padding: 72px 24px;
+    }
+
+    .ab-mission-card,
+    .ab-vision-card {
+        padding: 36px 28px;
+    }
+}

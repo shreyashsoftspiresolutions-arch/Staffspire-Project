@@ -1,0 +1,17 @@
+@import "./global.css";
+@import "./public.css";
+@import "./features.css";
+@import "./solutions.css";
+@import "./about.css";
+@import "./contact.css";
+@import "./login.css";
+@import "./dashboard.css";
+@import "./adminDashboard.css";
+@import "./managerDashboard.css";
+@import "./employeeDashboard.css";
+@import "./alertsShowcase.css";
+@import "./reportsDashboard.css";
+@import "./addEmployee.css";
+@import "./myProfile.css";
+@import "./theme-amber.css";
+@import "./theme-softspire.css";
