@@ -220,7 +220,7 @@ The system includes automated server tasks running via `node-cron`:
    ```
    *Or in phpMyAdmin:*
    - Create a database named `staffspire`
-   - Click the **Import** tab and select [schema.sql](file:///c:/Users/HP/OneDrive/Documents/Employee%20Management%20System/schema.sql).
+   - Click the **Import** tab and select [`schema.sql`](./schema.sql).
    - Click **Go** to generate all 16 tables, constraints, foreign keys, and seed data.
 
 ---
@@ -276,6 +276,4 @@ The system includes automated server tasks running via `node-cron`:
 ---
 
 ## 📄 License
-This project is licensed under the ISC / MIT License.#   S t a f f s p i r e - P r o j e c t  
- #   S t a f f s p i r e - P r o j e c t  
- 
+This project is licensed under the ISC / MIT License.
